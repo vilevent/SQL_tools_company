@@ -1,0 +1,17 @@
+P_CODE,P_DESCRIPT,P_INDATE,P_ONHAND,P_MIN,P_PRICE,P_DISCOUNT,V_CODE
+11QER/31,"Power painter, 15 psi., 3-nozzle","Saturday, November 3, 2001",8,5,$109.99,0.00,25595
+13-Q2/P2,7.25-in. pwr. saw blade,"Thursday, December 13, 2001",32,15,$14.99,0.05,21344
+14-Q1/L3,9.00-in. pwr. saw blade,"Tuesday, November 13, 2001",18,12,$17.49,0.00,21344
+1546-QQ2,"Hrd. cloth, 1/4-in., 2x50","Tuesday, January 15, 2002",15,8,$39.95,0.00,23119
+1558-QW1,"Hrd. cloth, 1/2-in., 3x50","Tuesday, January 15, 2002",23,5,$43.99,0.00,23119
+2232/QTY,"B&D jigsaw, 12-in. blade","Sunday, December 30, 2001",8,5,$109.92,0.05,24288
+2232/QWE,"B&D jigsaw, 8-in. blade","Monday, December 24, 2001",6,5,$99.87,0.05,24288
+2238/QPD,"B&D cordless drill, 1/2-in.","Sunday, January 20, 2002",12,5,$38.95,0.05,25595
+23109-HB,Claw hammer,"Sunday, January 20, 2002",23,10,$9.95,0.10,21225
+23114-AA,"Sledge hammer, 12 lb.","Wednesday, January 2, 2002",8,5,$14.40,0.05,NULL
+54778-2T,"Rat-tail file, 1/8-in. fine","Saturday, December 15, 2001",43,20,$4.99,0.00,21344
+89-WRE-Q,"Hicut chain saw, 16 in.","Thursday, February 7, 2002",11,5,$256.99,0.05,24288
+PVC23DRT,"PVC pipe, 3.5-in., 8-ft","Wednesday, February 20, 2002",188,75,$5.87,0.00,NULL
+SM-18277,"1.25-in. metal screw, 25","Friday, March 1, 2002",172,75,$6.99,0.00,21225
+SW-23116,"2.5-in. wd. screw, 50","Sunday, February 24, 2002",237,100,$8.45,0.00,21231
+WR3/TT3,"Steel matting, 4'x8'x1/6, .5 mesh","Thursday, January 17, 2002",18,5,$119.95,0.10,25595
