@@ -33,7 +33,7 @@ Before importing the 5 CSV files into the created tables, I used Excel to find a
 
 ### Importing the data
 
-Example of a LOAD DATA INFILE statement to import the CSV files into the 5 tables. I used the SET clause to transform the date from a format like '8/18/1999' to '1999-08-18'
+Example of a LOAD DATA INFILE statement used to import **Invoice.csv** into the invoice table. I used the ```SET``` clause to transform the date from a format like '8/18/1999' to '1999-08-18'
 ```sql
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Invoice.csv'
 INTO TABLE invoice
