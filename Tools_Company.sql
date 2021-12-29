@@ -457,3 +457,4 @@ SELECT
 FROM product
 WHERE YEAR(stocking_date) < 2002
 ORDER BY stocking_date;
+
