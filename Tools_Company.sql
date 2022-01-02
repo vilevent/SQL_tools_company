@@ -383,7 +383,7 @@ CREATE TEMPORARY TABLE t3
      GROUP BY c.cus_id
 );
 
--- store temporary result set
+-- Temporary table stores temporary result set
 CREATE TEMPORARY TABLE t4
 (
     SELECT 
