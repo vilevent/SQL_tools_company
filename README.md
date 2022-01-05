@@ -1,5 +1,6 @@
 # MySQL, Tools Company DB
 > Programming assignment from Introduction to Databases course
+###### *Note: I used MySQL Workbench when completing this assignment.*
 
 ### Creating the database
 
