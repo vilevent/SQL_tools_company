@@ -27,7 +27,7 @@ CREATE TABLE inv_line (
 
 ### Data handling for empty cells
 
-Before importing the 5 CSV files into the created tables, I used Excel to find and replace Blanks with NULL for the original **Product.csv** and **Customer.csv**
+Before importing the 5 CSV files into the created tables, I used Excel to find and replace Blanks with NULL for the original files **Product.csv** and **Customer.csv**
 - There were cells that appeared "empty" but contained spaces in them. To remove the spaces in the "empty" cells, I first filtered the V_CODE column in Product.csv by "(Blanks)" and then highlighted the cells to Delete the spaces. Same process was used for the CUS_INITIAL column in Customer.csv.
 - Once those cells are now empty, I selected Blanks with Go To Special in order to fill all empty cells with **NULL**, and then saved the CSV files.
 - The final CSV files, after completing the above in Excel, are found in the **```CSV Files```** folder.
