@@ -351,7 +351,7 @@ CREATE TEMPORARY TABLE t2
 SELECT *
 FROM t2;
 
--- subquery with NOT EXISTS operator
+-- Correlated subquery with NOT EXISTS operator
 SELECT 
     c.cus_id AS 'customer ID',
     CONCAT(c.first_name, ' ', c.last_name) AS 'customer name',
