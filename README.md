@@ -2,7 +2,7 @@
 > Programming assignment from Introduction to Databases course
 ###### *Note: I used MySQL Workbench when completing this assignment.*
 
-### Creating the database
+### Creating the database tables
 
 Example of a CREATE TABLE statement used, which has column constraints like PRIMARY KEY, FOREIGN KEY, NOT NULL.
 ```sql
