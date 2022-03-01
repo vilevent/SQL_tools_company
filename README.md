@@ -28,7 +28,7 @@ CREATE TABLE inv_line (
 ### Data handling for empty cells
 
 Before importing the 5 CSV files into the created tables, I used Excel to find and replace Blanks with NULL for the original files **Product.csv** and **Customer.csv**
-- There were cells that appeared "empty" but contained spaces in them. To remove the spaces in the "empty" cells, I first filtered the V_CODE column in Product.csv by "(Blanks)" and then highlighted the cells to Delete the spaces. Same process was used for the CUS_INITIAL column in Customer.csv.
+- There were cells that appeared "empty" but contained spaces in them. To remove the spaces in the "empty" cells, I first filtered the V_CODE column in `Product.csv` by "(Blanks)" and then highlighted the cells to Delete the spaces. Same process was used for the CUS_INITIAL column in `Customer.csv`.
 - Once those cells are now empty, I selected Blanks with Go To Special in order to fill all empty cells with **NULL**, and then saved the CSV files.
 - The final CSV files, after completing the above in Excel, are found in the **```CSV Files```** folder.
 
@@ -98,7 +98,7 @@ ORDER BY t.inv_number;
 
 
 #### Task 7: Write a query that finds the customers who did not make any purchases during the invoicing period.
-- With the ```WHERE``` clause specifying ```i.cus_id IS NULL```, I found the non-matching rows in the ```LEFT JOIN```.
+- With the ```WHERE``` clause specifying ```i.cus_id IS NULL```, I found the *non-matching* rows in the ```LEFT JOIN```.
 ```sql
 SELECT 
   c.cus_id,
@@ -113,8 +113,8 @@ ORDER BY c.cus_id;
  ![Task7](https://user-images.githubusercontent.com/96803412/147636152-053935d0-34d4-4e1e-96f7-909e2e3c2f83.png)
 
  
- #### Task 9: Write a query to compute the total purchases amount, average purchase amount and the number of product purchases made by each customer that has invoices.
- - Used the ```ROUND``` function on the calculate average purchase amounts to obtain values having 2 decimal places.
+ #### Task 9: Write a query to compute the total purchases amount, average purchase amount, and the number of product purchases made by each customer that has invoices.
+ - Used the ```ROUND``` function on the calculated average purchase amounts to obtain values having 2 decimal places only.
  - When grouping by customer ID, I used the ```COUNT``` function to find the number of invoice lines/purchases made per customer.
  ```sql
  SELECT 
@@ -134,9 +134,9 @@ GROUP BY c.cus_id;
 ![Task9](https://user-images.githubusercontent.com/96803412/147636225-bf91542a-3522-4319-9479-6534ef9a5658.png)
 
 
-#### Task 12: Find the listing of all customers except those who purchased product '7.25-in. pwr. saw blade'
+#### Task 12: Find the listing of all customers *except* those who purchased product '7.25-in. pwr. saw blade'
 - Used ```TEMPORARY TABLE t2``` to store the temporary result set of the ```SELECT``` statement.
-- With the ```NOT EXISTS``` operator, I found the rows that don't meet the condition in the ```WHERE``` clause of the subquery.
+- With the ```NOT EXISTS``` operator, I found the rows that don't meet the condition in the ```WHERE``` clause of the subquery. (This is a **correlated subquery** since we are using an external column reference `c.cus_id` from the outer table for the condition).
 ```sql
 CREATE TEMPORARY TABLE t2 
 (
