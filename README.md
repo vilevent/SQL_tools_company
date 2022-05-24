@@ -154,7 +154,7 @@ SELECT
 FROM customer c
 WHERE NOT EXISTS (SELECT *
                   FROM t2
-                  WHERE c.cus_id = t2.cus_id
+                  WHERE t2.cus_id = c.cus_id
                   AND t2.descript = '7.25-in. pwr. saw blade');
 ```
 ###### The 7 rows in the query output for Task 12
